@@ -1,0 +1,25 @@
+version: "3"
+services:
+  java:
+    build:
+      context: .
+    container_name: e27-banking
+    ports:
+      - "8085:8080"
+    networks:
+      - dev-network
+    depends_on:
+      - "mongodb"
+
+  mongodb:
+    container_name: e27-db-container
+    image: mongo
+    networks:
+      - dev-network
+    environment:
+      MONGODB_DATABASE: "e27-banking-db"
+      MONGODB_USER: "lordbagger"
+
+networks:
+  dev-network:
+    driver: bridge
