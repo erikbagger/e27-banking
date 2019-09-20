@@ -1,7 +1,7 @@
 package com.erikbagger.e27.e27bankingserver.service;
 
-import com.erikbagger.e27.e27bankingserver.document.Customer;
-import com.erikbagger.e27.e27bankingserver.repository.CustomerRepository;
+import com.erikbagger.e27.e27bankingserver.persistence.document.Customer;
+import com.erikbagger.e27.e27bankingserver.persistence.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

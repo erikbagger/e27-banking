@@ -1,7 +1,7 @@
 package com.erikbagger.e27.e27bankingserver.service;
 
-import com.erikbagger.e27.e27bankingserver.document.Account;
-import com.erikbagger.e27.e27bankingserver.repository.AccountRepository;
+import com.erikbagger.e27.e27bankingserver.persistence.document.Account;
+import com.erikbagger.e27.e27bankingserver.persistence.repository.AccountRepository;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -15,9 +15,7 @@ public class AccountService  {
         this.repository = repository;
     }
 
-    public Mono<Account> store(Account account){
-        return this.repository.save(account);
-    }
+    public Mono<Account> store(Account account){ return this.repository.save(account); }
 
     public Mono<Account> findById(String id){
         return this.repository.findById(id);

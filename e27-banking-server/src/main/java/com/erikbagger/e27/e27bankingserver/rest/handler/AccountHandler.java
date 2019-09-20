@@ -1,6 +1,6 @@
-package com.erikbagger.e27.e27bankingserver.handler;
+package com.erikbagger.e27.e27bankingserver.rest.handler;
 
-import com.erikbagger.e27.e27bankingserver.document.Account;
+import com.erikbagger.e27.e27bankingserver.persistence.document.Account;
 import com.erikbagger.e27.e27bankingserver.service.AccountService;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;

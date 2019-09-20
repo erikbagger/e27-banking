@@ -1,4 +1,4 @@
-package com.erikbagger.e27.e27bankingserver.document;
+package com.erikbagger.e27.e27bankingserver.persistence.document;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
-package com.erikbagger.e27.e27bankingserver.router;
+package com.erikbagger.e27.e27bankingserver.rest.router;
 
-import com.erikbagger.e27.e27bankingserver.handler.CustomerHandler;
+import com.erikbagger.e27.e27bankingserver.rest.handler.CustomerHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.server.RouterFunction;
